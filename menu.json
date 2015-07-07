@@ -1,0 +1,37 @@
+[
+{
+    "No" : "1",
+	"Menu" : [ {
+	"Caption": "Beþiktaþ Haberleri",
+	"Path" :"index.html",
+	"Paragraf" : "Beþiktaþ yönetimi üçüncü transfer bombasýný geceyarýsý patlattý ve Dinamo Moskova'nýn Brezilyalý stoperi Douglas Teixeira ile anlaþtý."
+	
+	} ]
+ }
+   , 
+ {
+	"No": 2,
+	"Menu" : [ {
+	"Caption" : "Fenerbahçe Haberleri",
+	"Path" :"ourwork.html",
+	"Paragraf" : "Fenerbahçe, dün akþam Ýstanbul'a getirdiði Luis Nani'nin imza töreniyle ilgili bir açýklama yaptý."
+	} ]
+}
+  ,
+  {
+	"No": 3,
+	"Menu" : [ {
+	"Caption" : "Galatasaray Haberleri",
+	"Path" : "testimonials.html",
+	"Paragraf" : "Aurelien Chedjou, Nani'nin Ýstanbul'a inmesi sonrasý arkadaþýndan gelen bir iletiyi takipçileriyle paylaþtý."
+	} ]
+  }
+  ,{
+	"No" : 4,
+	"Menu" : [ {
+	"Caption" : "Projects",
+	"Path" :"projects.html",
+	"Paragraf" : ""
+	} ]
+  }
+]

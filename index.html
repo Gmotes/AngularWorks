@@ -74,8 +74,28 @@
 	  <div id="content">
         <div class="content_item">
 		  <h1>Welcome To Your Website</h1> 
-          <p>{{paragraf}}</p>   		
+        	
 		
+		    <form name="reviewForm">
+              <!--  Live Preview -->
+              <blockquote>
+                <strong>Yeni Haber</strong>
+                {{haber.body}}  
+              </blockquote>
+
+              <!--  Review Form -->
+              <h4>Submit a Review</h4>
+              <fieldset class="form-group">
+                <textarea ng-model="haber.body" class="form-control" placeholder="Write a short review of the product..." title="Review"></textarea> <!-- Two way binding Test -->
+              </fieldset>
+              <fieldset class="form-group">
+                <input type="submit" class="btn btn-primary pull-right" value="Submit Review" />
+              </fieldset>
+            </form>
+
+		
+
+		   
 		 
 		</div><!--close content_item-->
       </div><!--close content-->   
