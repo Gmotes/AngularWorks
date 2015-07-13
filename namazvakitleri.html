@@ -1,0 +1,125 @@
+<!doctype html>
+<html ng-app="main">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortcut icon" href="img/favicon.ico"> 
+	<link rel="stylesheet" href="css/vendor/fluidbox.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<title>Test Page</title>
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>
+	if (!window.jQuery) 
+	{
+	    document.write('<script src="js/vendor/jquery.1.11.min.js"><\/script>');
+	}
+	</script>
+
+	<script src="js/vendor/jquery.fluidbox.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'YOUR_GOOGLE_ANALYTICS_ID', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+	 <script src="js/angular.min.js"></script>
+	 <script type="text/javascript" src="js/appMain.js"></script>
+
+</head>
+<body ng-controller="mainController as mc">
+
+
+	<header>
+
+		<div id="logo-container">
+			
+			<div id="subtitle">{{caption}}</div>
+		</div>
+<!-- 		<nav>
+			<ul>
+				<li><a href="#">Link 1</a></li>
+				<li><a href="#">Link 2</a></li>
+				<li><a href="#">Link 3</a></li> 
+				<li><a href="mailto:your@address.com" class="bordered">Contact</a></li>
+			</ul>
+		</nav> -->
+
+	</header>
+
+	<div id="content">
+
+		<section class="row">
+			<div class="col-full">
+			<label>Şehirler</label>
+			 <select ng-model="sehir.id" ng-options="sehir.SehirId as sehir.SehirAdi for sehir in sehirler" ng-change="fillIlceler(sehir.id)"></select>
+			
+			<label>İlçeler</label>
+			<select ng-model="ilce.id" ng-options="ilce.IlceId as ilce.IlceAdi for ilce in ilceler"> </select>
+			
+			 <button ng-click="vakitleriGoster(ilce.id)">Goster </button>
+		     <br/>
+ 			 <p> Tarih : {{vakit[0].Tarih}} </p>	
+ 		     <p> Imsak : {{vakit[0].Imsak}} </p>
+		     <p> Gunes : {{vakit[0].Gunes}} </p>
+		     <p> Ogle : {{vakit[0].Ogle}} </p>
+			 <p> Ikindi : {{vakit[0].Ikindi}} </p>
+			 <p> Aksam : {{vakit[0].Aksam}} </p>
+			 <p> Yatsi : {{vakit[0].Yatsi}} </p>
+			 <p> Kıble : {{vakit[0].Kible}} </p>
+
+		    </div>
+		</section>
+
+		<section class="row">
+			<div class="col">
+			
+
+			</div>
+    	</section>
+
+
+		<section class="row">
+			<div class="col-full">
+				<p>
+				
+				</p>
+			</div>
+		</section>
+ 
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>
+	if (!window.jQuery) 
+	{
+	    document.write('<script src="js/vendor/jquery.1.11.min.js"><\/script>');
+	}
+	</script>
+
+	<script src="js/vendor/jquery.fluidbox.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'YOUR_GOOGLE_ANALYTICS_ID', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+</body>
+</html>
+
